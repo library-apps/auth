@@ -7,6 +7,7 @@ import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import lombok.val;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -80,6 +81,20 @@ public class CustomAuthenticationFilter extends UsernamePasswordAuthenticationFi
 
 		Map<String, Object> res = new HashMap<String, Object>();
 		res.put("data", token);
+
+		new ObjectMapper().writeValue(response.getOutputStream(), res);
+	}
+
+	@Override
+	protected void unsuccessfulAuthentication(HttpServletRequest request,
+											  HttpServletResponse response, AuthenticationException failed)
+			throws IOException, ServletException {
+
+		response.setContentType(MediaType.APPLICATION_JSON_VALUE);
+
+		Map<String, Object> res = new HashMap<String, Object>();
+		res.put("code", HttpStatus.CREATED.value());
+		res.put("message", "failed to get token");
 
 		new ObjectMapper().writeValue(response.getOutputStream(), res);
 	}
