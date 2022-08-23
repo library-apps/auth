@@ -1,0 +1,15 @@
+2022-08-24 00:03:49.607  INFO [AUTH,,] 6426 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-24 00:08:50.255  INFO [AUTH,,] 6426 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-24 00:13:50.261  INFO [AUTH,,] 6426 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-24 00:18:50.273  INFO [AUTH,,] 6426 --- [AsyncResolver-bootstrap-executor-0] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2022-08-24 00:22:43.369  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application AUTH with eureka with status DOWN
+2022-08-24 00:22:43.372  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1661275363372, current=DOWN, previous=UP]
+2022-08-24 00:22:43.375  INFO [AUTH,,] 6426 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH/192.168.1.4:AUTH:8082: registering service...
+2022-08-24 00:22:43.474  INFO [AUTH,,] 6426 --- [DiscoveryClient-InstanceInfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH/192.168.1.4:AUTH:8082 - registration status: 204
+2022-08-24 00:22:44.976  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-24 00:22:45.140  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-24 00:22:45.187  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-08-24 00:22:46.042  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2022-08-24 00:22:49.070  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2022-08-24 00:22:49.104  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_AUTH/192.168.1.4:AUTH:8082 - deregister  status: 200
+2022-08-24 00:22:49.316  INFO [AUTH,,] 6426 --- [SpringApplicationShutdownHook] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
