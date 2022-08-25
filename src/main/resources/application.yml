@@ -9,9 +9,9 @@ spring:
     livereload:
       enabled: true
   datasource:
-    url: jdbc:mysql://localhost:3306/userservice?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    url: jdbc:mysql://alterra-academy.ceuplinqqmmu.us-east-1.rds.amazonaws.com:3306/userservice?allowPublicKeyRetrieval=true&useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
     username: root
-    password:
+    password: Gd7)xUs0W37Uq[
     driver-class-name: com.mysql.cj.jdbc.Driver
   jpa:
     open-in-view: false
